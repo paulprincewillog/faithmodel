@@ -1,2 +1,2 @@
 # faithmodel
-Website for Faith Models school Onitsha
+Website for Faith Model school Onitsha
