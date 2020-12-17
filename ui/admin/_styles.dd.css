@@ -1,0 +1,257 @@
+#post_announcement button {
+    margin-left: 50px
+}
+
+#post_announcement [dd_feedback] {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-left: 45px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.announcement_success {
+    color: #15ad89
+}#admin_dashboard p {
+    margin: 25px;
+    font-size: 160%;
+    line-height: 150%;
+}
+
+#admin_dashboard a {
+    padding: 20px 30px;
+    display: block;
+    border-top: 1px solid #ddd;
+    font-weight:  bold;
+    display: flex;
+    align-items: center;
+    font-size: 125%;
+}
+
+
+#admin_dashboard a > span {
+   flex: 1;
+   margin: 0px 15px;
+}#admin_login i {
+    font-size: 230%;
+    font-weight: bold;
+    color: #34435e
+}
+
+#admin_login form > section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ddd
+}
+
+#admin_login form > section > p {
+    flex: 1;
+    font-size: 115%;
+    line-height: 150%;
+    margin: 0px;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+#admin_login form > button {
+    margin-left: 70px
+}
+
+#admin_login form > input {
+    padding-left: 70px
+}
+
+#admin_login [dd_feedback] {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+#admin_section > #check_numbers {
+    width: 50%;
+}
+
+#all_numbers {
+    flex-flow: row wrap;
+    display: flex
+}
+
+#check_numbers .each_number {
+    flex: 1 0 25%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    max-width: 43%
+}
+
+#check_numbers .each_number > section {
+    margin-right: 5px;
+    flex: 1
+}
+
+#check_numbers .each_number > section > p {
+    margin: 0px
+}
+
+#check_numbers .each_number > section > p:last-child {
+    margin: 0px;
+    font-weight: bold;
+    font-size: 120%;
+    margin-top: 5px;
+}
+
+#check_numbers .each_number button {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    font-size: 120%;
+    box-shadow: 0px 10px 25px #ccc;
+}
+
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 700px) {
+        
+    #all_numbers {
+        display: block;
+    }
+
+    #check_numbers .each_number {
+        max-width: none
+    }
+
+}
+/* ----------------- SEARCHBOX */
+
+.searchbox {
+    background: white;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    width: -webkit-fill-available;
+    overflow: hidden;
+    box-shadow: none;
+    margin: 0px;
+    padding-right: 20px
+}
+
+.searchbox input, .searchbox select {
+    border: 0px;
+    padding: 20px;
+    flex: 2;
+    font-size: 110%;
+    margin: 0px;
+    padding-left: 50px;
+}
+
+.searchbox select {
+    flex: 1;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd
+}
+
+.searchbox i {
+    font-size: 120%;
+    margin: 5px;
+}
+
+.searchbox button {
+    padding: 5px;
+    font-size: 70%;
+    margin: 3px 10px;
+    box-shadow: 0px 10px 25px #ddd;
+    border-radius:  50%;
+}
+
+.searchbox button:hover {
+    box-shadow: 0px 0px 10px #666;
+}
+#section_for_admin {
+	display: block;
+}
+
+#admin_section > section {
+	display: none;
+	line-height: 150%;
+	color: #333
+}
+
+#admin_section .navigation {
+	position: absolute;
+    top: 30%;
+	left: 15%;
+}
+
+#admin_section .navigation button {
+	background: #34435e;
+}
+
+#admin_section .navigation .next_line {
+	color: #ddd;
+    border-bottom: 2px solid #666;
+}
+/* 
+#admin_button {
+	width: 30%;
+    margin: auto;
+    position: relative;
+	left: -5%;
+}
+
+#admin_button > button {
+	box-shadow: none;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 180%;
+}
+
+#check_numbers + div {
+	width: 50%;
+} */
+
+/* ----------- GENERAL MODAL WINDOW --- */
+#admin_section {
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background: rgba(0,0,0,0.9);
+	overflow-y: auto;
+	padding-top: 5%;
+	z-index: 5
+}
+
+#admin_section > section {
+	background: white;
+    width: 30%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 779px) {
+    #admin_section {
+		padding-top: 20%
+	}
+
+    #admin_section > section, #admin_section > #check_numbers {
+        width: 70%;
+    	margin-left: 80px;
+	}
+
+	#admin_section .navigation {
+		left: 5px
+	}
+}

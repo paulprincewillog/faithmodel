@@ -1,0 +1,631 @@
+.padding10 {
+    padding: 10%
+}
+
+.flexbox {
+    display: flex
+}
+
+.flexbox > * {
+    flex: 1
+}[dd_feedback] {
+    padding: 10px;
+    color: darkred;
+    text-align: center;
+    margin: 5px;
+}
+
+/* ------------------
+------------------------------- STYLE FOR LOADER --------------
+------------------------------------------------------------------ */
+
+dd_loader [dd_ajaxload] {
+    height: 2.5px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left:0px;
+    right: 0px;
+    overflow: hidden;
+    background-color: #ccc;
+    z-index: 2;
+    display: none
+}
+
+dd_loader [dd_ajaxload]:before{
+  display: block;
+  position: absolute;
+  content: "";
+  left: -200px;
+  width: 200px;
+  height: 2.5px;
+  background-color: #2196F3;
+  animation: dd_ajaxload 1s linear infinite;
+  -webkit-animation: dd_ajaxload 1s linear infinite;
+}
+
+@keyframes dd_ajaxload {
+    from {left: -200px; width: 30%;}
+    50% {width: 30%;}
+    70% {width: 70%;}
+    80% { left: 50%;}
+    95% {left: 120%;}
+    to {left: 100%;}
+}
+
+@-webkit-keyframes dd_ajaxload {
+    from {left: -200px; width: 30%;}
+    50% {width: 30%;}
+    70% {width: 70%;}
+    80% { left: 50%;}
+    95% {left: 120%;}
+    to {left: 100%;}
+}
+
+
+dd_loader [dd_onload] {
+  padding-top: 15%;
+  padding-left: 5%;
+  text-align: center;
+  background: white;
+	position: fixed;
+	top:0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	z-index: 3;
+}
+
+dd_loader [dd_onload]::before {
+    content: '';
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgba(239,69,76,.3);
+    border-radius: 50%;
+    border-top-color: rgb(239,69,76);
+    animation: dd_onload 1s ease-in-out infinite;
+    -webkit-animation: dd_onload 1s ease-in-out infinite;
+}
+
+dd_loader [dd_onload]::after {
+	content: '';
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    position: relative;
+    left: -135px;
+    top: -20px;
+}
+
+@keyframes dd_onload {
+  to { transform: rotate(360deg); }
+}
+@-webkit-keyframes dd_onload {
+  to { -webkit-transform: rotate(360deg); }
+}
+
+/* ------------------
+------------------------------- STYLE FOR dd_ attributes --------------
+------------------------------------------------------------------ */
+
+
+
+
+/* -------------------------
+---------------------------- PAGINATION -------------
+-------------------------*/
+
+[dd_next]:empty:after {
+    content: 'Next';
+}
+
+[dd_previous]:empty:after {
+    content: 'Previous';
+}
+
+
+[dd_nodata] {
+  width: 100%;
+  font-size: 200%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* ------------------
+------------------------------- STYLE FOR SKELENTON UI --------------
+------------------------------------------------------------------ */
+
+.dd_shortline:empty::after, .dd_longline:empty::after, .dd_thumbnail:not([src]) {
+	content: "";
+	display: inline-block;
+	height: 10px;
+	border-radius: 50px;
+	margin: 5px 0px;
+	background: #ddd;
+}
+
+
+.dd_longline:empty::after {
+	width: 100%;
+}
+
+.dd_shortline:empty::after {
+	width: 40%;
+  margin: auto;
+  min-width: 50px
+}
+
+.dd_thumbnail, .dd_thumbnail:not([src])  {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 7px
+}
+
+.dd_longline:empty::after,
+.dd_shortline:empty::after,
+.dd_thumbnail:not([src])  {
+	-webkit-animation: dd_loading 1s infinite alternate;
+	animation: dd_loading 1s infinite alternate;
+}
+
+@keyframes dd_loading {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+footer {
+    padding: 20px 5% 30px 5%;
+    border-top: 2px solid #333;
+}
+
+footer > * {
+    padding: 10px 0px;
+    margin: 0px 30px;
+    display: inline-block;
+    color: #999;
+}
+
+footer > a {
+    border-bottom: 2px solid #333;
+    color: #999;
+}
+
+footer img {
+    height: 13px;
+    margin: 0px 5px 3px 5px;
+    vertical-align: middle;
+}
+
+footer > p {
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 13px;
+    margin-top: 20px
+}
+
+footer > p > span {
+    margin: 5px
+}button {
+    background:#34435e;
+    border:0px;
+    border-radius: 50px;
+    padding: 8px 30px;
+    margin: 5px;
+    font-size: 80%;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;    
+    box-shadow: 0px 5px 20px #18202d;
+
+}
+
+button:hover {
+    box-shadow: none
+}
+
+form {
+    overflow: hidden;
+}
+
+form input, form textarea, form select, input[type='text'] {
+    display: block;
+    width: -webkit-fill-available;;
+    border: 0px;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 50px;
+    font-size: 120%;
+    line-height: 150%;
+}
+
+form button {
+    margin: 20px 10px;
+}
+#main_nav {
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+#main_nav > #searchbox, #main_nav > #main_links {
+    flex: 1
+}
+
+#main_nav > * {
+    margin-right: 50px
+}
+
+#main_nav > *:last-child {
+    margin-right: 0px;
+}
+
+#logo > img {
+    height: 55px;
+    cursor: pointer
+}
+
+/* ----------------- MAIN LINKS */
+
+#main_links > a {
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+
+#main_links i {
+    padding: 5px;
+    margin-left: -5px;
+}
+
+#main_links a[title='account'], #main_links a[title='sell'], #main_links a[href='index'],  #main_links a[title='logout'], #main_links a[title='contact']  {
+    
+    background:#2196F3;
+    border:0px;
+    border-radius: 50px;
+    padding: 5px 25px;
+    margin: 5px;
+    font-size: 70%;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 10px 25px #ddd;
+    float: right
+}
+
+#main_links a[title='account'] {
+    box-shadow: 0px 10px 25px #eee;
+    background: #ddd;
+    color: #333
+}
+
+#main_links a[href='index'] {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+#main_links a[href='index'] i {
+    margin: 0px
+}
+
+#main_links .arrow {
+    margin-right: 20px
+}
+
+#main_links a[title='logout'] {
+    border: 1px solid #ddd;
+    margin: 5px 10px;
+    padding: 5px 20px;
+    font-size: 70%;
+    border-radius: 50px;
+    display: inline-block;
+    box-shadow: 0px 10px 25px #eee;
+    background: #ddd;
+    color: #333;
+   
+}
+
+#main_links a[title='user'] {
+    color: #333
+}
+
+#main_links a[title='account']:hover, #main_links a[title='sell']:hover, #main_links a[title='logout']:hover, #main_links a[href='index']:hover, #main_links a[title='contact']:hover  {
+    box-shadow: 0px 0px 10px #ccc
+}
+
+/* ----------------- SEARCHBOX */
+
+#searchbox, #item_search {
+    background: white;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 70%;
+    overflow: hidden;
+    box-shadow: none;
+    margin: 0px;
+    margin-right: 50px
+}
+
+#searchbox input, #item_search input, #searchbox select {
+    border: 0px;
+    padding: 10px;
+    flex: 2;
+    font-size: 110%;
+    margin: 0px;
+}
+/* 
+#searchbox input , #item_search input {
+    padding-left: 60px
+} */
+
+#searchbox select,
+#item_search select {
+    flex: 1;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd
+}
+
+#searchbox i,
+#item_search i {
+    font-size: 120%;
+    margin: 5px;
+}
+
+#searchbox button, #item_search button {
+    padding: 5px;
+    font-size: 70%;
+    margin: 3px 10px;
+    box-shadow: 0px 10px 25px #ddd;
+    border-radius:  50%;
+}
+
+#searchbox button:hover {
+    box-shadow: 0px 0px 10px #666;
+}
+
+/* ----------------- TITLE */
+#page_title {
+    padding: 15px 30px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+#page_title > h1 {
+    font-family: segoe ui black;
+    color: #444;
+    margin: 0px;
+    text-align: center;
+    font-size: 120%
+}
+
+#page_title a {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 5px 25px;
+    margin: 5px;
+    font-size: 70%;
+    font-weight: bold;
+    cursor: pointer;
+    background: #ddd;
+    color: #333
+}
+
+
+#page_title > div {
+    position: absolute;
+    left: 50px
+}
+
+
+#page_title > h1 i {
+    padding: 5px;
+    margin-left: -25px;
+    margin-right: 5px;
+}
+/* ------------------- NAVIGATION BUTTONS --- */
+
+.navigation > div {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer
+}
+
+.navigation .prev_view {
+    justify-content: flex-start;
+    z-index: 2;
+    position: relative;
+    width: 50%
+}
+
+.navigation .prev_view i {
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
+
+.navigation .next_line {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-right: 50px;
+    font-size: 11px;
+    padding-right: 40px;
+    position: relative;
+    top: -15px;
+    color: #999;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.navigation .prev_view .next_line {
+    margin-left: 10px;
+    padding-right: 2px;
+    padding-left: 15px;
+    transform: rotate(270deg);
+    position: relative;
+    left: -62px;
+    top: -60px;
+}
+
+.navigation button {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    background: #34435e;
+    color: white;
+    font-size: 30px;
+    border-radius: 50px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: normal;
+    box-shadow: 0px 5px 20px #18202d;
+}
+
+.navigation .next_view button {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+.navigation .prev_view button {
+    background: #202733;
+    color: #ddd;
+    box-shadow: 0px 5px 20px #202733;
+}
+
+.navigation button:hover {
+    box-shadow: none;
+}
+
+/* Big tabs and below */
+@media only screen and (max-width: 768px) {
+    .navigation .prev_view {
+        bottom: -100px;
+        margin-top: -50px;
+    }
+}* {
+    font-family: Metropolis light, arial;
+    transition: all 0.5s
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    color: #333;
+    font-size: 14px;
+    line-height: 150%;
+    background: black
+}
+
+a {
+    text-decoration: none;
+    color: #0c996d;
+    cursor: pointer
+}
+
+h1, h2, h3 {
+    font-family: metropolis black, arial;
+}
+
+* 
+.arrow_right {
+	-webkit-animation: gif_right 1s infinite alternate;
+	position: relative;
+	font-size: 20px;
+	font-weight: bold;
+	animation: gif_right 1s infinite alternate;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+@keyframes gif_right {
+  from {
+    left: 20px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@-webkit-keyframes gif_right {
+  from {
+    left: 20px;
+  }
+  to {
+    left: 0px;
+  }
+} 
+
+
+/* --------------- SCROLL BAR ---- */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+  cursor: grab 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #111; 
+  border: 1px solid #333;
+  /* border-radius: 50px; */
+  transition: all 0.5s;
+  cursor: pointer
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+  cursor: grab
+
+}
+
+/* Big tabs and below */
+@media only screen and (max-width: 768px) {
+       
+    footer {
+        padding: 0px;
+        border-top: 1px solid #333;
+    }    
+
+    footer > * {
+        margin: 0px;
+        margin-left: 25px;
+        margin-right: 5px;
+        margin-top: 20px
+    }
+
+    footer > p {
+        display: block;
+        padding: 20px 20px 10px 40px;
+        border-top: 1px solid #333;
+        margin: 20px 0px;
+    }
+
+    .flexbox {
+        display: block;
+    }
+}

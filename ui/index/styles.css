@@ -1,0 +1,61 @@
+.blank_area {
+    height: 200px;
+    background: white;
+    width: 100%
+}
+
+
+#transition {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background:#000;
+    display: none;
+    z-index: 3;
+}
+
+
+/* ------------------- SECTIONS --- */
+  
+main {
+    position: relative;
+    background: black;
+    color: white
+}
+
+main > section {
+    display: none;
+    position: relative;
+    overflow: hidden
+}
+/* 
+main:after {
+    width: 15px;
+    height: 100%;
+    background: black;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    bottom: 0px;
+    pointer-events:none;
+    z-index: 1;
+    cursor: grab
+} */
+
+main > .current_view {
+    display: block;
+}
+
+
+
+/* ------------------- ADD ONS --- */
+.line {
+    width: 50px;
+    height: 2px;
+    background: #222;
+    display: inline-block;
+}

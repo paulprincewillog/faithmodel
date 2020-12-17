@@ -1,0 +1,234 @@
+#contact {
+    padding-top: 10%;
+    background-image: url('../../_assets/images/students-of-faith-model-schools-onitsha-contact.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+
+#contact > h2 {
+    margin: 7% 5% 5% 12%;
+    font-size: 200%
+}
+
+#contact > h2 i {
+    margin-left: 30px;
+    vertical-align: middle;
+}
+
+#contact_details {
+    /* border: 1px solid #222; */
+    border-left: 0px;
+    width: 70%;
+    display: flex;    
+    margin-left: 12%;
+    margin-top: 5%;
+
+}
+
+#contact_details > * {
+    flex: 1
+}
+
+#send_email {
+    margin-left: 12%;
+    width: 50%;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.8);
+}
+
+#email_header {
+    display: flex;
+    padding: 25px;
+    align-items: center;
+}
+
+#email_header p {
+    padding-left: 20px;
+}
+
+#email_header i {
+    font-size: 150%
+}
+
+#email_header span {
+    display: inline-block;
+    border-bottom: 2px solid #333;
+    margin-bottom: 5px;
+}
+    
+#send_email form > *, #cta form > * {
+    padding: 30px 20px;
+    border: 0px;
+    border-bottom: 2px solid #222;
+    background: transparent;
+    color: white
+}
+
+#send_email form > div, #cta form > div {
+    border-bottom: 0px
+}
+
+/* #send_email input {
+    width: 50%;
+} */
+
+#send_email textarea {
+    width: 100%
+}
+
+#send_email button {
+    margin-top: 20px;
+}
+#send_email button i {
+    margin-left: 20px;
+}
+
+#phone_number {
+    border-bottom: 2px solid #333;
+    padding: 20px 30px;
+    font-size: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#phone_number a {
+    background: #0c996d;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 15px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 30px;
+    box-shadow: 0px 10px 25px #000;
+}
+
+#phone_number a i {
+    position: relative;
+    left: -3px;
+    top: -2px;
+}
+
+
+#contact_address {
+    position: relative;
+    min-height: 300px;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    border: 2px solid #333;
+    border-bottom: 0px;
+}
+
+#map {
+    position: absolute;
+    background:#ddd;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%
+}
+
+
+#map::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background:rgba(0,0,0,0.4);
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+
+
+#address {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+      /* margin-left: 40px; */
+    /* border-radius: 0px 0px 0px 5px; */
+    /* border: 1px solid #222; */
+    border-top: 0px;
+    border-right: 0px;
+    padding: 25px;
+    z-index: 2;
+    background: rgba(0,0,0,0.9);
+}
+
+#address i {
+    vertical-align: middle;
+}
+
+#address a {
+    display: inline-block;
+    border-bottom: 1px solid #0c996d;
+    padding-bottom: 5px
+}
+
+#other_contacts {
+    margin: 20px
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    #contact {
+        padding-top: 50%;
+        background-image: url('../../_assets/images/students-of-faith-model-schools-onitsha-contact-mobile.jpg');
+        height: fit-content
+    }
+
+    #contact_details {
+        display: block;
+        margin-top: 50px;
+        width: 82%;
+    }
+
+    #contact_details > *:first-child {
+        border-right: 0px;
+    }
+
+    #contact_address {
+        height: 500px;
+        border-radius: 10px;
+    }
+
+    #other_contacts {
+        margin: 0px;
+    }
+
+    #send_email {
+        width: 80%
+    }
+    
+    #contact > h2 {
+        margin: 70px 10px 50px 15%;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    
+    #contact {
+        padding-top: 15%;
+    }
+
+    #contact_details {
+        width: 80%
+    }
+
+}
