@@ -1,0 +1,84 @@
+* {
+    font-family: Metropolis light, arial;
+    transition: all 0.5s
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    color: #333;
+    font-size: 14px;
+    line-height: 150%;
+    background: black
+}
+
+a {
+    text-decoration: none;
+    color: #0c996d;
+    cursor: pointer
+}
+
+h1, h2, h3 {
+    font-family: metropolis black, arial;
+}
+
+* 
+.arrow_right {
+	-webkit-animation: gif_right 1s infinite alternate;
+	position: relative;
+	font-size: 20px;
+	font-weight: bold;
+	animation: gif_right 1s infinite alternate;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+@keyframes gif_right {
+  from {
+    left: 20px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@-webkit-keyframes gif_right {
+  from {
+    left: 20px;
+  }
+  to {
+    left: 0px;
+  }
+} 
+
+
+/* --------------- SCROLL BAR ---- */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+  cursor: grab 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #111; 
+  border: 1px solid #333;
+  /* border-radius: 50px; */
+  transition: all 0.5s;
+  cursor: pointer
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+  cursor: grab
+
+}
+

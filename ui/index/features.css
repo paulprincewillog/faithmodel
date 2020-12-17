@@ -1,0 +1,282 @@
+.feature_image {
+    position: relative
+}
+
+.feature_image img {
+    width: 100%
+}
+
+.features .each_feature {
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    right: 0px;
+}
+
+/* .features .each_feature:before {
+    content: '';
+    width: 100%;
+    height: 100px;
+    display: block;
+    background: linear-gradient(transparent, rgba(0,0,0,0.5), black);;
+    position: absolute;
+    top: -85px
+} */
+
+/* .features .details {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 30px 50px;
+    background-color: rgba(0,0,0,0.9);
+    width: 30%;
+    border-radius: 0px 15px 0px 0px;
+} */
+
+.features .details {
+    padding-left: 10%;
+    padding-bottom: 50px;
+}
+
+/* .features .caption {
+    font-size: 150%;
+    line-height: 150%;
+    width: 34%;
+    margin-left: 120px;
+    margin-top: 5px
+} */
+
+/* .features .caption_image {
+    margin-left: 120px;
+    height: 50px;
+    fill: white
+} */
+
+.features .testimonial {
+    line-height: 170%;
+    width: 34%;
+}
+
+.features .author {
+    margin-top: 15px;
+}
+
+.features .author .line {
+    margin-right: 10px;
+    margin-bottom: 4px;
+    height: 1px;
+    width: 25px;
+}
+
+.features .quotes {
+    font-size: 150%;
+}
+
+.features .open-quote {
+    position: relative;
+    left: -13px;
+    margin-right: -12px;
+}
+
+/* .features h2 .line {
+    margin-right: 50px;
+    margin-left: -109px;
+} */
+/* 
+.each_feature .feature-line {
+    position: relative;
+    top: 42px;
+    height: 1px;
+    margin-left: -20px;
+} */
+
+.each_feature .content {
+    font-size: 125%;
+    line-height: 180%;
+    width: 45%;
+}
+
+/* 
+.highlights {
+    margin-top: 20px;
+    display: flex;
+    width: 60%;
+    border: 2px solid #333;
+    border-bottom: 0px;
+    border-radius: 15px 15px 0px 0px;
+    background: rgba(0,0,0,0.8);
+    margin-left: 100px;
+}
+
+.highlights .each_highlight {
+    line-height: 140%;
+    align-items: center;
+    flex: 1;
+    padding: 30px 20px;
+    border-right: 2px solid #333;
+}
+
+.each_highlight:last-child {
+    border-right: 0px
+}
+
+.each_highlight p {
+    font-size: 110%;
+}
+
+.each_highlight .line {
+    width: 30px
+}
+
+.each_highlight i {
+    font-size: 200%;
+    color: #666
+} */
+
+
+.features .next_view {
+    position: relative;
+    top: -90px;
+    margin-bottom: -90px
+}
+
+
+.features h2 {
+    font-size: 220%;
+    width: 90%;
+    color: white;
+    margin-top: 0px;
+    line-height: 145%
+}
+
+.features h3 {
+  color: #ccc;
+  border-bottom: 2px solid #666;
+  display: inline-block;
+  padding-bottom: 12px;
+  margin-bottom: 6px
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    .highlights {
+        flex-flow: row wrap;
+        padding-left: 0px
+    }
+
+    .highlights .each_highlight {
+        flex: 1 0 30%;
+        padding: 10px;
+        display: flex;
+        align-items: center
+    }
+
+    .each_highlight p {
+        margin-left: 10px
+    }
+
+    .each_highlight:nth-child(1), .each_highlight:nth-child(2) {
+        border-bottom: 2px solid #333
+    }
+
+    .each_highlight:nth-child(even) {
+        border-right: 0px
+    }
+
+    /* .features .caption, .features .caption_image {
+        margin-left: 45px;
+    }
+     */
+}
+
+/* Portrait tablets and large phones, 600px and up */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+
+    .feature_image:after {
+        content: '';
+        width: 100%;
+        height: 100px;
+        display: block;
+        background: linear-gradient(transparent, rgba(0,0,0,0.5), black);
+        position: absolute;
+        bottom: 0px
+    }
+
+    .feature_image img {
+        width: 200%;
+        position: relative;
+        left: -150px;
+    }
+
+    .features .each_feature {
+        position: static;
+        margin-top: -200px
+    }
+
+    .features .details {
+        margin-top: 0px;
+        position: relative;
+    }
+    
+    .features .caption, .features .caption_image {
+        margin-left: 50px;
+    }
+
+    .features .caption, .features .testimonial, .features .highlights {
+        width: auto;
+    }
+    
+    .features .caption {
+        font-size: 170%;
+    }
+
+    .features .highlights {
+        display: block;
+        padding-left: 0px;
+        margin: 20px 30px;
+        border: 2px solid #333;
+        border-radius: 10px;
+    }
+
+    .highlights .each_highlight {
+        display: flex;
+        border-bottom: 2px solid #333;
+        padding: 5px;
+        padding-left: 20px;
+        border-right: 0px;
+    }
+
+    .highlights .each_highlight:last-child {
+        border-bottom: 0px;
+    }
+
+    .each_highlight p {
+        padding-left: 10px;
+    }
+
+        
+    .features .next_view {
+        position: static;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    
+    .each_feature .content {
+        width: 85%
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 0px) and (max-width: 310px) {
+
+
+}

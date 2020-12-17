@@ -1,0 +1,1075 @@
+#about {
+    line-height: 200%;    
+    padding-top: 0px;
+}
+
+#about h2 {
+    font-size: 150%;
+    color: white
+}
+
+#about .content_for_about_us {
+    width: 60%;
+    margin: 30px 0px 70px 0px;
+}
+
+.highlights_for_about_us {
+    width: 80%;
+    border: 0px;
+    padding: 0px;
+    margin-top: 20px;
+}
+
+.highlights_for_about_us > div {
+    margin-right: 60px
+}
+
+.stars i {
+    background: #de9f12;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 2px;
+    box-shadow: 0px 10px 25px #000;
+    font-weight: bold;
+    font-size: 80%
+}
+  
+.highlights_for_about_us h3 {
+    margin-top: 0px;
+    margin-bottom: 8px
+}
+
+
+.highlights_for_about_us p {
+    margin-top: 8px
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+    
+
+  #about .content_for_about_us {
+    width: 100%;
+  }
+
+  .highlights_for_about_us {
+    width: 100%;
+  }
+
+  .highlights_for_about_us > div {
+    margin-top: 40px;
+    margin-right: 0px;
+  }
+
+  
+}
+#announcement {
+    display: none
+}
+
+#announcement_area {
+    background: #15AD89;
+    color: white;
+    padding: 20px 5%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+#announcement_area > p {
+    flex: 5;
+    font-size: 110%;
+    margin: 0px 5%;
+    line-height: 150%
+}
+
+#announcement_area a {
+    color: #d4e6e1;
+    border-radius: 50px;
+    padding: 8px 15px;
+    font-size: 90%;
+    background: #108267;
+    font-weight: bold;
+    box-shadow: 0px 10px 25px #108267;
+}
+
+#announcement_area a > i {
+    padding: 5px;
+    position: relative;
+    top: 3px;
+    right: -3px;
+    color:#add;
+    font-size: 16px;
+}
+
+#announcement_area span {
+    display: inline-block;
+    color: #1f5447;
+    font-size: 150%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #108267;
+    box-shadow: 0px 10px 25px #108267;
+    cursor: pointer;
+}
+
+#announcement_area span:hover, #announcement_area a:hover {
+    box-shadow: 0px 0px 10px  #11694d
+}
+
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    #announcement_area {
+        display: block !Important;
+    }
+
+    #announcement_area > div {
+        margin-top: 20px;
+        margin-left: 20px
+    }
+
+    #announcement_area > p {
+        margin: 5%
+    }
+}#contact {
+    padding-top: 10%;
+    background-image: url('../../_assets/images/students-of-faith-model-schools-onitsha-contact.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+
+#contact > h2 {
+    margin: 7% 5% 5% 12%;
+    font-size: 200%
+}
+
+#contact > h2 i {
+    margin-left: 30px;
+    vertical-align: middle;
+}
+
+#contact_details {
+    /* border: 1px solid #222; */
+    border-left: 0px;
+    width: 70%;
+    display: flex;    
+    margin-left: 12%;
+    margin-top: 5%;
+
+}
+
+#contact_details > * {
+    flex: 1
+}
+
+#send_email {
+    margin-left: 12%;
+    width: 50%;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.8);
+}
+
+#email_header {
+    display: flex;
+    padding: 25px;
+    align-items: center;
+}
+
+#email_header p {
+    padding-left: 20px;
+}
+
+#email_header i {
+    font-size: 150%
+}
+
+#email_header span {
+    display: inline-block;
+    border-bottom: 2px solid #333;
+    margin-bottom: 5px;
+}
+    
+#send_email form > *, #cta form > * {
+    padding: 30px 20px;
+    border: 0px;
+    border-bottom: 2px solid #222;
+    background: transparent;
+    color: white
+}
+
+#send_email form > div, #cta form > div {
+    border-bottom: 0px
+}
+
+/* #send_email input {
+    width: 50%;
+} */
+
+#send_email textarea {
+    width: 100%
+}
+
+#send_email button {
+    margin-top: 20px;
+}
+#send_email button i {
+    margin-left: 20px;
+}
+
+#phone_number {
+    border-bottom: 2px solid #333;
+    padding: 20px 30px;
+    font-size: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#phone_number a {
+    background: #0c996d;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 15px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 30px;
+    box-shadow: 0px 10px 25px #000;
+}
+
+#phone_number a i {
+    position: relative;
+    left: -3px;
+    top: -2px;
+}
+
+
+#contact_address {
+    position: relative;
+    min-height: 300px;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    border: 2px solid #333;
+    border-bottom: 0px;
+}
+
+#map {
+    position: absolute;
+    background:#ddd;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%
+}
+
+
+#map::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background:rgba(0,0,0,0.4);
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+
+
+#address {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+      /* margin-left: 40px; */
+    /* border-radius: 0px 0px 0px 5px; */
+    /* border: 1px solid #222; */
+    border-top: 0px;
+    border-right: 0px;
+    padding: 25px;
+    z-index: 2;
+    background: rgba(0,0,0,0.9);
+}
+
+#address i {
+    vertical-align: middle;
+}
+
+#address a {
+    display: inline-block;
+    border-bottom: 1px solid #0c996d;
+    padding-bottom: 5px
+}
+
+#other_contacts {
+    margin: 20px
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    #contact {
+        padding-top: 50%;
+        background-image: url('../../_assets/images/students-of-faith-model-schools-onitsha-contact-mobile.jpg');
+        height: fit-content
+    }
+
+    #contact_details {
+        display: block;
+        margin-top: 50px;
+        width: 82%;
+    }
+
+    #contact_details > *:first-child {
+        border-right: 0px;
+    }
+
+    #contact_address {
+        height: 500px;
+        border-radius: 10px;
+    }
+
+    #other_contacts {
+        margin: 0px;
+    }
+
+    #send_email {
+        width: 80%
+    }
+    
+    #contact > h2 {
+        margin: 70px 10px 50px 15%;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    
+    #contact {
+        padding-top: 15%;
+    }
+
+    #contact_details {
+        width: 80%
+    }
+
+}#cta {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    color: #333;
+    width: 20%;
+    margin: 30px;
+    text-align: center;
+    z-index: 2;
+}
+
+#cta > div {
+    box-shadow: 0px 10px 25px #000;
+    border-radius: 20px 20px 0px 20px;
+    background: rgba(0,0,0,0.9);
+    color: white;
+    overflow: hidden;
+    display: none;
+    position: relative;
+    left: -60px;
+    top: -10px;
+    padding-top: 30px;
+    border: 2px solid #222;
+    text-align: left;
+}
+
+.current_cta {
+    display: block !important
+}
+
+#cta > #cta_image {
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    right: -5px;
+}
+
+#cta_image > img {
+    height: 55px;
+    margin-top: 30px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 25px #000;
+}
+
+#cta > div p {
+    margin: 15px 20px 15px 20px;
+    line-height: 150%;
+    font-weight: bold;
+    text-align: left;
+}
+
+#cta .cta_buttons {
+    padding: 0px 15px 15px 15px
+}
+
+
+#cta .cta_buttons > button:first-child {
+    border-right: 1px solid #666
+}
+
+
+#cta form > * {
+    padding: 15px 30px
+}
+
+#cta form button {
+    margin: 0px
+}
+
+#cta_success i {
+    font-size: 400%;
+    margin-left: 15px;
+    color: #666;
+}
+
+#cta_success p {
+    margin-bottom: 25px !important;
+    font-size: 13px;
+}
+
+#close_cta {
+    z-index: 1;
+    position: relative;
+    bottom: -10px;
+    right: 60px;
+    text-align: right;
+}
+
+#close_cta span {
+    display: inline-block;
+    color: #ddd;
+    font-size: 150%;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.9);
+    box-shadow: 0px 10px 25px #222;
+    cursor: pointer;
+}
+
+#close_cta span:hover {
+    box-shadow: 0px 0px 10px #222;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    #cta {
+        right: -10px;
+        width: 60%;
+    }
+
+    #cta > div {
+        border: 1px solid #333;
+        background: #000;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+   
+    #cta {
+        width: 30%
+    }
+
+
+}#top_description {
+    background-image: url('../../_assets/images/students-of-faith-model-schools-onitsha.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+}
+
+
+#top_description:after {
+  content: '';
+  width: 100%;
+  height: 100px;
+  display: block;
+  background: linear-gradient(transparent, rgba(0,0,0,0.5), black);
+  position: absolute;
+  bottom: 0px
+}
+
+#top_description > div {
+    padding: 10%;
+    padding-top: 20%;
+    /* background-color: rgba(0,0,0,0.7); */
+}
+
+#top_description h1 {
+    font-size: 320%;
+    width: 90%;
+    color: white;
+    margin-top: 10px;
+    line-height: 145%
+}
+
+#top_description h3 {
+  color: #ccc;
+  border-bottom: 2px solid #666;
+  display: inline-block;
+  padding-bottom: 12px;
+}
+
+#top_description h2 {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  font-weight: normal;
+  width: 60%;
+  line-height: 150%;
+}
+
+#top_description button {
+  padding: 10px 40px;
+  box-shadow: 0px 10px 25px #000;
+  background-color: #34435e;
+  border-radius: 50px;
+  font-weight: normal;
+  font-size: 110%;
+  font-weight: bold;
+}
+
+#top_description button:hover {
+    box-shadow: 0px 0px 10px #000
+}
+
+#top_description button i {
+    font-weight: normal;
+    font-size: 100%;
+    margin-right: 7px;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+
+#top_description span {
+    display: inline-block;
+}
+
+.arrow {
+    margin-left: 20px
+}
+
+
+.arrow {
+	-webkit-animation: gif 1s infinite alternate;
+	animation: gif 1s infinite alternate;
+	position: relative;
+	font-size: 20px;
+}
+
+@keyframes gif {
+  from {
+    top: 15px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+@-webkit-keyframes gif {
+  from {
+    top: 15px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+    
+  #top_description {
+    background-image: url('../../_assets/images/students-of-faith-model-schools-onitsha-mobile.jpg');
+  }
+
+  #top_description > div { 
+    padding-top: 230px;
+    padding-bottom: 100px;
+  }
+
+  #top_description h1 {
+    font-size: 200%;
+    width: 90%;
+  }
+
+  #top_description button {
+    padding: 10px 20px;
+  }
+  
+}
+
+/* Medium devices (tabloids) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  #top_description > div {
+    padding-top: 25%;
+  }
+}
+
+
+
+#home .prev_view {
+  display: none
+}.feature_image {
+    position: relative
+}
+
+.feature_image img {
+    width: 100%
+}
+
+.features .each_feature {
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    right: 0px;
+}
+
+/* .features .each_feature:before {
+    content: '';
+    width: 100%;
+    height: 100px;
+    display: block;
+    background: linear-gradient(transparent, rgba(0,0,0,0.5), black);;
+    position: absolute;
+    top: -85px
+} */
+
+/* .features .details {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 30px 50px;
+    background-color: rgba(0,0,0,0.9);
+    width: 30%;
+    border-radius: 0px 15px 0px 0px;
+} */
+
+.features .details {
+    padding-left: 10%;
+    padding-bottom: 50px;
+}
+
+/* .features .caption {
+    font-size: 150%;
+    line-height: 150%;
+    width: 34%;
+    margin-left: 120px;
+    margin-top: 5px
+} */
+
+/* .features .caption_image {
+    margin-left: 120px;
+    height: 50px;
+    fill: white
+} */
+
+.features .testimonial {
+    line-height: 170%;
+    width: 34%;
+}
+
+.features .author {
+    margin-top: 15px;
+}
+
+.features .author .line {
+    margin-right: 10px;
+    margin-bottom: 4px;
+    height: 1px;
+    width: 25px;
+}
+
+.features .quotes {
+    font-size: 150%;
+}
+
+.features .open-quote {
+    position: relative;
+    left: -13px;
+    margin-right: -12px;
+}
+
+/* .features h2 .line {
+    margin-right: 50px;
+    margin-left: -109px;
+} */
+/* 
+.each_feature .feature-line {
+    position: relative;
+    top: 42px;
+    height: 1px;
+    margin-left: -20px;
+} */
+
+.each_feature .content {
+    font-size: 125%;
+    line-height: 180%;
+    width: 45%;
+}
+
+/* 
+.highlights {
+    margin-top: 20px;
+    display: flex;
+    width: 60%;
+    border: 2px solid #333;
+    border-bottom: 0px;
+    border-radius: 15px 15px 0px 0px;
+    background: rgba(0,0,0,0.8);
+    margin-left: 100px;
+}
+
+.highlights .each_highlight {
+    line-height: 140%;
+    align-items: center;
+    flex: 1;
+    padding: 30px 20px;
+    border-right: 2px solid #333;
+}
+
+.each_highlight:last-child {
+    border-right: 0px
+}
+
+.each_highlight p {
+    font-size: 110%;
+}
+
+.each_highlight .line {
+    width: 30px
+}
+
+.each_highlight i {
+    font-size: 200%;
+    color: #666
+} */
+
+
+.features .next_view {
+    position: relative;
+    top: -90px;
+    margin-bottom: -90px
+}
+
+
+.features h2 {
+    font-size: 220%;
+    width: 90%;
+    color: white;
+    margin-top: 0px;
+    line-height: 145%
+}
+
+.features h3 {
+  color: #ccc;
+  border-bottom: 2px solid #666;
+  display: inline-block;
+  padding-bottom: 12px;
+  margin-bottom: 6px
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    .highlights {
+        flex-flow: row wrap;
+        padding-left: 0px
+    }
+
+    .highlights .each_highlight {
+        flex: 1 0 30%;
+        padding: 10px;
+        display: flex;
+        align-items: center
+    }
+
+    .each_highlight p {
+        margin-left: 10px
+    }
+
+    .each_highlight:nth-child(1), .each_highlight:nth-child(2) {
+        border-bottom: 2px solid #333
+    }
+
+    .each_highlight:nth-child(even) {
+        border-right: 0px
+    }
+
+    /* .features .caption, .features .caption_image {
+        margin-left: 45px;
+    }
+     */
+}
+
+/* Portrait tablets and large phones, 600px and up */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+
+    .feature_image:after {
+        content: '';
+        width: 100%;
+        height: 100px;
+        display: block;
+        background: linear-gradient(transparent, rgba(0,0,0,0.5), black);
+        position: absolute;
+        bottom: 0px
+    }
+
+    .feature_image img {
+        width: 200%;
+        position: relative;
+        left: -150px;
+    }
+
+    .features .each_feature {
+        position: static;
+        margin-top: -200px
+    }
+
+    .features .details {
+        margin-top: 0px;
+        position: relative;
+    }
+    
+    .features .caption, .features .caption_image {
+        margin-left: 50px;
+    }
+
+    .features .caption, .features .testimonial, .features .highlights {
+        width: auto;
+    }
+    
+    .features .caption {
+        font-size: 170%;
+    }
+
+    .features .highlights {
+        display: block;
+        padding-left: 0px;
+        margin: 20px 30px;
+        border: 2px solid #333;
+        border-radius: 10px;
+    }
+
+    .highlights .each_highlight {
+        display: flex;
+        border-bottom: 2px solid #333;
+        padding: 5px;
+        padding-left: 20px;
+        border-right: 0px;
+    }
+
+    .highlights .each_highlight:last-child {
+        border-bottom: 0px;
+    }
+
+    .each_highlight p {
+        padding-left: 10px;
+    }
+
+        
+    .features .next_view {
+        position: static;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    
+    .each_feature .content {
+        width: 85%
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 0px) and (max-width: 310px) {
+
+
+}#header {
+    position: relative;
+    bottom: -140px;
+    z-index: 2;
+    margin-top: -140px;
+}
+
+#main_header {
+    display: flex;
+    align-items: center; 
+    padding:  30px 9%;
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.5), transparent);
+    position: relative
+}
+  
+#main_header > div {
+    flex: 1;
+}
+
+#main_links {
+    text-align: right;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+}
+
+#main_links > a {
+    margin: 20px
+}
+
+#main_links > *:last-child {
+    
+    background:#15ad89;
+    border:0px;
+    border-radius: 50px;
+    padding: 5px 25px;
+    margin-left: 45px;
+    font-size: 70%;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 10px 25px #000
+}
+
+#main_links > a:last-child:hover {
+    box-shadow: 0px 0px 10px #000
+}
+
+#main_links i {
+    padding: 5px;
+    margin-left: -5px;
+}
+
+#main_links .icon {
+    width: 20px;
+    margin: 5px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+    #main_header {
+        display: block;
+        padding: 0px;
+        padding-left: 12%;
+    }
+
+    #logo {
+        padding: 15px 0px;
+    }
+
+    #main_links {
+        
+        padding-left: 0px;
+        padding-bottom: 0px;
+        flex-flow: row wrap;
+        justify-content: initial;
+        text-align: left
+    }
+
+    #main_links > a {
+        margin-left: 0px;
+    }
+
+    #main_links > *:last-child {
+        margin-left: 0px
+    }
+}.blank_area {
+    height: 200px;
+    background: white;
+    width: 100%
+}
+
+
+#transition {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background:#000;
+    display: none;
+    z-index: 3;
+}
+
+
+/* ------------------- SECTIONS --- */
+  
+main {
+    position: relative;
+    background: black;
+    color: white
+}
+
+main > section {
+    display: none;
+    position: relative;
+    overflow: hidden
+}
+/* 
+main:after {
+    width: 15px;
+    height: 100%;
+    background: black;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    bottom: 0px;
+    pointer-events:none;
+    z-index: 1;
+    cursor: grab
+} */
+
+main > .current_view {
+    display: block;
+}
+
+
+
+/* ------------------- ADD ONS --- */
+.line {
+    width: 50px;
+    height: 2px;
+    background: #222;
+    display: inline-block;
+}
+/* Big tabs and below */
+@media only screen and (max-width: 768px) {
+      
+    #header {
+        bottom: -170px;
+        z-index: 2;
+        margin-top: -170px;
+    }  
+
+}

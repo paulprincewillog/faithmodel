@@ -1,0 +1,16 @@
+#post_announcement button {
+    margin-left: 50px
+}
+
+#post_announcement [dd_feedback] {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-left: 45px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.announcement_success {
+    color: #15ad89
+}
