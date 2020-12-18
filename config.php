@@ -9,8 +9,8 @@
 	define("GENERAL_TITLE", "Faith Model Schools Onitsha");
 	
 	// Define URL
-	define("ROOT_PATH", "faith/");
-	define("ROOT_URL", "http://localhost/faith/");
+	define("ROOT_PATH", "faithmodel/");
+	define("ROOT_URL", "http://localhost/faithmodel/");
 
 	define("BACKEND", "apps/backend/");	
 	define("FRONTEND", "apps/frontend/");
