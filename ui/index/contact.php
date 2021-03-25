@@ -4,11 +4,11 @@
 
     <section id="send_email">
 
-        <form>
+        <form dd_submit="yes" action="app/index/send_mail">
 
             <input type="text" name="email" placeholder="Your email">
 
-            <textarea name="message" rows="10" placeholder="Type your message here"></textarea>
+            <textarea name="content" rows="10" placeholder="Type your message here"></textarea>
 
             <div align="right">
                 <button type="submit"> Send email  <i class="pe-7s-angle-right"></i> </button>

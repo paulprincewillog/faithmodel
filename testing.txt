@@ -1,8 +1,0 @@
-span
-  box-shadow: 0 0 0 10px #fff
-  background-color: #fff
-    box-decoration-break: clone;
-  -webkit-box-decoration-break:
-  line-height: 2.2
-
-box-shadow: -7px 0 0 10px #fff, 7px 0 0 10px #fff

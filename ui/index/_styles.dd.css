@@ -213,7 +213,7 @@
 } */
 
 #send_email textarea {
-    width: 100%
+    width: -webkit-fill-available
 }
 
 #send_email button {
@@ -221,6 +221,17 @@
 }
 #send_email button i {
     margin-left: 20px;
+}
+
+#send_email .email_success {
+    border-bottom: 2px solid #222;
+    margin: 0px;
+    font-size: 130%;
+    color: #15ad89;
+    text-align: left;
+    padding-left: 30px;
+    line-height: 150%;
+
 }
 
 #phone_number {
